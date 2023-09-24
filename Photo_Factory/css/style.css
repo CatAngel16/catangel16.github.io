@@ -1,0 +1,23 @@
+h1 {
+    text-align: center; 
+}
+
+nav {
+    text-align: center;
+    didplay: inline;
+    border: 2px solid #fdf;
+    border-radius: 10px;
+}
+
+img {
+    width: 33%;
+    height: auto;
+}
+
+body {
+    background-color: #ddd;
+    border: 50px solid #ddd;
+    border-top: 5px solid #ddd;
+}
+
+
