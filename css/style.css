@@ -10,7 +10,7 @@
 }
 
 :root {
-    --text-border: 1.5em;
+    --text-border: 25px;
 }
 
 /* fonts start */
@@ -149,6 +149,13 @@ footer ul {
 
 
 @media screen and (max-width: 767px) {
+    main {
+        width: 80%;
+        margin: auto;
+
+        font-size: 15px;
+    }
+
     #topBar {
         background-color: #9A96B6;
         padding: 5%;
@@ -281,6 +288,8 @@ footer ul {
     border-top: 2em;
     border-color: transparent;
     border-style: solid;
+
+    font-size: 20px;
     } 
 
     .logo {
