@@ -1,5 +1,5 @@
 Student name: Jeremy Feenstra
 Student number: 710192
 Student class: INF1b
-GitHub Repository: your github repository URL
-GitHub Pages URL: your github pages URL
+GitHub Repository: https://github.com/CatAngel16/catangel16.github.io
+GitHub Pages URL: https://catangel16.github.io/index

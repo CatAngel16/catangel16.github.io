@@ -31,6 +31,14 @@ img {
     width: 100%;
 }
 
+form {
+    padding-top: 1em;
+}
+
+textarea {
+    resize: none;
+}
+
 footer {
     display: grid;
     grid-template-columns: 30% 30%;
@@ -44,6 +52,15 @@ footer {
 
 footer ul { 
     list-style-type: none;
+}
+
+.textBox {
+    border: 2px solid #000000;
+    border-radius: 15px;
+}
+
+.textLinks {
+    color: #C13EAD;
 }
 
 .logoFooter {
@@ -123,6 +140,11 @@ footer ul {
     border: var(--text-border) solid transparent;
 }
 
+.unorderedList5 {
+    grid-area: unorderedList5;
+    border: var(--text-border) solid transparent;
+}
+
 /* images */
 .img1 {
     grid-area: img1;
@@ -147,18 +169,13 @@ footer ul {
 }
 /* grid areas end */
 
-
+/* mobile */
 @media screen and (max-width: 767px) {
     main {
         width: 80%;
         margin: auto;
 
         font-size: 15px;
-    }
-
-    #topBar {
-        background-color: #9A96B6;
-        padding: 5%;
     }
 
     /* hamburger menu start */
@@ -236,8 +253,18 @@ footer ul {
     .pc {
         display: none;
     }
+
+    #topBar {
+        background-color: #9A96B6;
+        padding: 5%;
+    }
+
+    #optional {
+    font-size: 6px;
+    }
 }
 
+/* desktop */
 @media screen and (min-width: 768px) {
     nav {
         grid-area: nav;
@@ -292,9 +319,23 @@ footer ul {
     font-size: 20px;
     } 
 
+    img {
+        border-radius: 25px;
+    }
+
     .logo {
         width: 40%;
         height: auto;
+    }
+
+    .instellingenSluitertijd {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+    }
+
+    .mobile {
+        display: none;
     }
 
     /* grid area per page start*/
@@ -314,7 +355,7 @@ footer ul {
 
     #grid-container-instellingen {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 50% 50%;
         grid-template-areas:
         "title1 title1"
         "article1 article1"
@@ -350,12 +391,13 @@ footer ul {
         "unorderedList1 img1"
         "img2 article2"
         "img3 unorderedList2"
+        "unorderedList3 unorderedList3"
         "seperateText1 seperateText1"
         "title2 title2"
         "article3 article3"
-        "unorderedList3 unorderedList3"
+        "unorderedList4 unorderedList4"
         "article4 img4"
-        "unorderedList4 img4"
+        "unorderedList5 img4"
         ;
     }
 
@@ -368,7 +410,7 @@ footer ul {
         grid-gap: 10px;
     }
 
-    .mobile {
-        display: none;
+    #optional {
+    font-size: 10px;
     }
 }

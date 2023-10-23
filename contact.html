@@ -63,7 +63,7 @@
                 </a>
             </li>
             <li>
-                Huidige pagina: Contact
+                Contact
             </li>
         </ul>
     </nav>
@@ -108,7 +108,82 @@
     </nav>
 
     <main>
-        
+        <header>
+            <h1>
+                Contact
+            </h1>
+        </header>
+
+        <article>
+            Hieronder kunt u een formulier invullen om verdere vragen te stellen of feedback te geven over de website. Na het
+            verzenden zal ik zo snel mogelijk reageren op uw bericht
+        </article>
+
+        <form>
+            <label>
+                Aanhef: *
+            </label>
+
+            <p>
+                <input type="radio" name="aanhef" value="Heer" checked>
+                <label for="Heer">De heer</label>
+                <input type="radio" name="aanhef" value="Mevrouw">
+                <label for="Mevrouw">Mevrouw</label>
+                <input type="radio" name="aanhef" value="Anders">
+                <label for="Anders">Anders, namelijk</label>
+                <input type="text">
+            </p>  
+        </form>
+
+        <form>
+            <label>
+                Naam: *
+            </label>
+
+            <p class="textBox">
+                <input type="text" required>
+            </p>
+        </form>
+
+        <form>
+            <label>
+                E-mail: *
+            </label>
+
+            <p class="textBox">
+                <input type="email" required>
+            </p>
+        </form>
+
+        <form>
+            <label>
+                Onderwerp: *
+            </label>
+
+            <p class="textBox">
+                <input type="text" required>
+            </p>
+        </form>
+
+        <form>
+            <label>
+                Telefoonnummer:<em id="optional">(optioneel)</em>
+            </label>
+
+            <p class="textBox">
+                <input type="tel">
+            </p>
+        </form>
+
+        <form>
+            <label>
+                Bericht: *
+            </label>
+
+            <p textBox>
+                <textarea name="bericht" id="bericht" cols="100" rows="10" required></textarea>
+            </p>
+        </form>
     </main>
 
     <footer>
