@@ -101,6 +101,11 @@ footer ul {
     border: var(--text-border) solid transparent;
 }
 
+.article5 {
+    grid-area: article5;
+    border: var(--text-border) solid transparent;
+}
+
 /* subarticles */
 .subarticle1 {
     grid-area: subarticle1;
@@ -367,6 +372,11 @@ footer ul {
         grid-gap: 10px;
     }
 
+    .article5 {
+        padding: 25px;
+        color: #000000;
+    }
+
     .mobile {
         display: none;
     }
@@ -431,6 +441,7 @@ footer ul {
         "unorderedList4 unorderedList4"
         "article4 img4"
         "unorderedList5 img4"
+        "article5 article5"
         ;
     }
 
