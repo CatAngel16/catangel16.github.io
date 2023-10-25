@@ -33,6 +33,7 @@
             <span></span>
         </label>
     </section>
+
     <input type="checkbox" id="menu-toggle" class="mobile">
 
     <nav class="menu mobile">
@@ -107,19 +108,19 @@
         </ul>
     </nav>
 
-    <main>
-        <header>
+    <main id="grid-container-contact">
+        <header class="title1">
             <h1>
                 Contact
             </h1>
         </header>
 
-        <article>
+        <article class="article1">
             Hieronder kunt u een formulier invullen om verdere vragen te stellen of feedback te geven over de website. Na het
             verzenden zal ik zo snel mogelijk reageren op uw bericht
         </article>
 
-        <form>
+        <form id="radioButtons">
             <label>
                 Aanhef: *
             </label>
@@ -127,63 +128,67 @@
             <p>
                 <input type="radio" name="aanhef" value="Heer" checked>
                 <label for="Heer">De heer</label>
+
                 <input type="radio" name="aanhef" value="Mevrouw">
                 <label for="Mevrouw">Mevrouw</label>
+                
                 <input type="radio" name="aanhef" value="Anders">
                 <label for="Anders">Anders, namelijk</label>
-                <input type="text">
+                <input type="text" class="textBox">
             </p>  
         </form>
 
         <form>
-            <label>
+            <label for="name">
                 Naam: *
             </label>
 
-            <p class="textBox">
-                <input type="text" required>
+            <p>
+                <input type="text" id="name" class="textBox" required>
             </p>
         </form>
 
         <form>
-            <label>
+            <label for="email">
                 E-mail: *
             </label>
 
-            <p class="textBox">
-                <input type="email" required>
+            <p>
+                <input type="email" id="email" class="textBox" required>
             </p>
         </form>
 
         <form>
-            <label>
+            <label for="subject">
                 Onderwerp: *
             </label>
 
-            <p class="textBox">
-                <input type="text" required>
+            <p>
+                <input type="text" id="subject" class="textBox" required>
             </p>
         </form>
 
         <form>
-            <label>
+            <label for="phoneNumber">
                 Telefoonnummer:<em id="optional">(optioneel)</em>
             </label>
 
-            <p class="textBox">
-                <input type="tel">
+            <p>
+                <input type="tel" id="phoneNumber" class="textBox">
             </p>
         </form>
 
         <form>
-            <label>
+            <label for="message">
                 Bericht: *
             </label>
 
-            <p class="textBox">
-                <textarea name="bericht" id="bericht" cols="100" rows="10" required></textarea>
+            <p>
+                <textarea name="bericht" id="message" class="textBox" required></textarea>
             </p>
         </form>
+
+        <input type="submit" value="verstuur" id="sendButton" />
     </main>
 
     <footer>

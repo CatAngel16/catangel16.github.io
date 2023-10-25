@@ -35,10 +35,6 @@ form {
     padding-top: 1em;
 }
 
-textarea {
-    resize: none;
-}
-
 footer {
     display: grid;
     grid-template-columns: 30% 30%;
@@ -57,6 +53,8 @@ footer ul {
 .textBox {
     border: 2px solid #000000;
     border-radius: 15px;
+    height: 48px;
+    width: 263px;
 }
 
 .textLinks {
@@ -167,7 +165,37 @@ footer ul {
     grid-area: seperateText1;
     border: var(--text-border) solid transparent;
 }
+
+/* forms */
+#name {
+    grid-area: name;
+}
+
+#email {
+    grid-area: email;
+}
+
+#subject {
+    grid-area: subject;
+}
+
+#phoneNumber {
+    grid-area: phoneNumber;
+}
 /* grid areas end */
+
+#radioButtons {
+    grid-area: radioButtons;
+}
+
+#message {
+    grid-area: message;
+}
+
+#submit {
+    grid-area: submit;
+}
+
 
 /* mobile */
 @media screen and (max-width: 767px) {
@@ -244,6 +272,10 @@ footer ul {
 
     /* hamburger menu end */
 
+    .textBox {
+        width: 240px;
+    }
+
     .logo {
     height: auto;
     width: 50%;
@@ -259,8 +291,9 @@ footer ul {
         padding: 5%;
     }
 
-    #optional {
-    font-size: 6px;
+    #message {
+        height: 177px;
+        width: 240px;
     }
 }
 
@@ -401,6 +434,20 @@ footer ul {
         ;
     }
 
+    #grid-container-contact {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-areas:
+        "title1 title1"
+        "article1 article1"
+        "radioButtons radioButtons"
+        "name email"
+        "subject phoneNumber"
+        "message message"
+        "sendButton sendButton"
+        ;
+    }
+
     /* grid area per page end */
 
     /* home page side by side images */
@@ -408,6 +455,11 @@ footer ul {
         display: grid;
         grid-template-columns: auto auto auto;
         grid-gap: 10px;
+    }
+
+    #message {
+        height: 177px;
+        width: 750px;
     }
 
     #optional {
