@@ -282,9 +282,8 @@ footer ul {
     }
 
     .logo {
-    height: auto;
-    width: 50%;
-    float: right;
+        height: auto;
+        width: 50%;
     }
 
     .pc {
@@ -294,6 +293,18 @@ footer ul {
     #topBar {
         background-color: #9A96B6;
         padding: 5%;
+
+        p {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 
     #message {
