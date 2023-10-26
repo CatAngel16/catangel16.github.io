@@ -172,6 +172,10 @@ footer ul {
 }
 
 /* forms */
+#form {
+    grid-area: form;
+}
+
 #name {
     grid-area: name;
 }
@@ -197,8 +201,28 @@ footer ul {
     grid-area: message;
 }
 
-#submit {
+.sendButton {
     grid-area: submit;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px;
+    margin-bottom: 50px;
+
+    color: #521E82;
+    background-color: #81CD7E;
+    text-align: center;
+    padding: 14px 16px;
+    border-radius: 4px;
+
+    height: 45px;
+    width: 236px;
+}
+
+#sent {
+    display: block;
+    margin-bottom: 247px;
 }
 
 
@@ -307,7 +331,7 @@ footer ul {
         }
     }
 
-    #message {
+    #messageBox {
         height: 177px;
         width: 240px;
     }
@@ -456,17 +480,25 @@ footer ul {
         ;
     }
 
-    #grid-container-contact {
+    #form {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 50% 50%;
         grid-template-areas:
-        "title1 title1"
-        "article1 article1"
         "radioButtons radioButtons"
         "name email"
         "subject phoneNumber"
         "message message"
-        "sendButton sendButton"
+        "submit submit"
+        ;
+    }
+
+    #grid-container-contact {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
+        "title1 title1"
+        "article1 article1"
+        "form form"
         ;
     }
 
@@ -479,9 +511,9 @@ footer ul {
         grid-gap: 10px;
     }
 
-    #message {
+    #messageBox {
         height: 177px;
-        width: 750px;
+        width: 99.7%;
     }
 
     #optional {

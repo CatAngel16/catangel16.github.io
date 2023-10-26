@@ -25,7 +25,7 @@
             <span></span>
             <span></span>
         </label>
-        
+
         <p>
             <a href="index.html">
                 <img src="img/logoTxt.png" alt="" title="" class="logo">
@@ -116,78 +116,80 @@
 
         <article class="article1">
             Hieronder kunt u een formulier invullen om verdere vragen te stellen of feedback te geven over de website. Na het
-            verzenden zal ik zo snel mogelijk reageren op uw bericht
+            verzenden zal ik zo snel mogelijk reageren op uw bericht.
         </article>
 
-        <form id="radioButtons">
-            <label>
-                Aanhef: *
-            </label>
+        <form action="verzonden.html" method="get" id="form">
+            <section id="radioButtons">
+                <label>
+                    Aanhef: *
+                </label>
 
-            <p>
-                <input type="radio" name="aanhef" value="Heer" checked>
-                <label for="Heer">De heer</label>
+                <p>
+                    <input type="radio" name="aanhef" value="Heer" checked>
+                    <label for="Heer">De heer</label>
 
-                <input type="radio" name="aanhef" value="Mevrouw">
-                <label for="Mevrouw">Mevrouw</label>
+                    <input type="radio" name="aanhef" value="Mevrouw">
+                    <label for="Mevrouw">Mevrouw</label>
+
+                    <input type="radio" name="aanhef" value="Anders">
+                    <label for="Anders">Anders, namelijk:</label>
+                    <input type="text" class="textBox">
+                </p>  
+            </section>
+
+            <section id="name">
+                <label>
+                    Naam: *
+                </label>
                 
-                <input type="radio" name="aanhef" value="Anders">
-                <label for="Anders">Anders, namelijk</label>
-                <input type="text" class="textBox">
-            </p>  
+                <p>
+                    <input type="text" class="textBox" required>
+                </p>
+            </section>
+
+            <section id="email">
+                <label>
+                    E-mail: *
+                </label>
+                
+                <p>
+                    <input type="email" class="textBox" required>
+                </p>
+            </section>
+
+            <section id="subject">
+                <label>
+                    Onderwerp: *
+                </label>
+                
+                <p>
+                    <input type="text" class="textBox" required>
+                </p>
+            </section>
+
+            <section id="phoneNumber">
+                <label>
+                    Telefoonnummer:<em id="optional">(optioneel)</em>
+                </label>
+                
+                <p>
+                    <input type="tel" class="textBox">
+                </p>
+            </section>
+
+            <section id="message">
+                <label>
+                    Bericht: *
+                </label>
+                
+                <p>
+                    <textarea name="bericht" id="messageBox" class="textBox" required></textarea>
+                </p>
+            </section>
+
+            <input type="submit" value="Verzenden" class="sendButton" />
         </form>
-
-        <form>
-            <label for="name">
-                Naam: *
-            </label>
-
-            <p>
-                <input type="text" id="name" class="textBox" required>
-            </p>
-        </form>
-
-        <form>
-            <label for="email">
-                E-mail: *
-            </label>
-
-            <p>
-                <input type="email" id="email" class="textBox" required>
-            </p>
-        </form>
-
-        <form>
-            <label for="subject">
-                Onderwerp: *
-            </label>
-
-            <p>
-                <input type="text" id="subject" class="textBox" required>
-            </p>
-        </form>
-
-        <form>
-            <label for="phoneNumber">
-                Telefoonnummer:<em id="optional">(optioneel)</em>
-            </label>
-
-            <p>
-                <input type="tel" id="phoneNumber" class="textBox">
-            </p>
-        </form>
-
-        <form>
-            <label for="message">
-                Bericht: *
-            </label>
-
-            <p>
-                <textarea name="bericht" id="message" class="textBox" required></textarea>
-            </p>
-        </form>
-
-        <input type="submit" value="verstuur" id="sendButton" />
     </main>
 
     <footer>
