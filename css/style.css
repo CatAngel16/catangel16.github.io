@@ -13,7 +13,7 @@
     --text-border: 25px;
 }
 
-/* fonts start */
+/* fonts start*/
 
 nav {
     font-family: 'Hammersmith One', sans-serif;
@@ -26,9 +26,18 @@ body, html {
 
 /* fonts end */
 
+main {
+    padding-bottom: 1rem;
+}
+
 img {
     height: auto;
     width: 100%;
+}
+
+article {
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 form {
@@ -36,6 +45,9 @@ form {
 }
 
 footer {
+    clear: both;
+    position: relative;
+
     display: grid;
     grid-template-columns: 30% 30%;
 
@@ -50,6 +62,21 @@ footer ul {
     list-style-type: none;
 }
 
+footer ul li {
+    padding-bottom: 5px;
+}
+
+footer ul li a {
+    color: #000000;
+    text-decoration: none;
+
+    transition-duration: 0.2s;
+}
+
+footer ul li a:hover {
+    text-decoration: underline 4px #85C0C7;
+}
+
 .textBox {
     border: 2px solid #000000;
     border-radius: 15px;
@@ -58,12 +85,30 @@ footer ul {
 }
 
 .textLinks {
-    color: #C13EAD;
+    color: #d81f1f;
+}
+
+.homeImg {
+    border-radius: 25px;
+    padding: 5%;
+}
+
+.sluitertijd {
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .logoFooter {
     width: 60%;
     height: auto;
+}
+
+.contact article{
+    color: #000000;
+}
+
+.contact ul li {
+    list-style: none;
 }
 
 /* grid areas start */
@@ -201,6 +246,7 @@ footer ul {
     grid-area: message;
 }
 
+/* send button in form */
 .sendButton {
     grid-area: submit;
 
@@ -218,11 +264,13 @@ footer ul {
 
     height: 45px;
     width: 236px;
+
+    cursor: pointer;
+    transition-duration: 0.4s;
 }
 
-#sent {
-    display: block;
-    margin-bottom: 247px;
+.sendButton:hover {
+    background-color: #29e723;
 }
 
 
@@ -368,16 +416,20 @@ footer ul {
             text-decoration: none;
             border-radius: 10px;
             background-color: #85C0C7;
+
+            transition-duration: 0.4s;
         }
 
         li a:hover:not(.active) {
-            background-color: #85C0C7;
+            background-color: #33b1be;
             color: #521E82;
         }
 
         .active {
             background-color: #81CD7E;
             color: #521E82;
+
+            cursor:not-allowed;
         }
     }
 
@@ -390,6 +442,10 @@ footer ul {
     border-style: solid;
 
     font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.5px;
     } 
 
     img {
@@ -507,8 +563,8 @@ footer ul {
     /* home page side by side images */
     #grid-image-container {
         display: grid;
-        grid-template-columns: auto auto auto;
-        grid-gap: 10px;
+        grid-template-columns: auto auto;
+        grid-gap: 100px;
     }
 
     #messageBox {
