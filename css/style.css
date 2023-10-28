@@ -370,12 +370,12 @@ footer ul li a:hover {
     #topBar {
         background-color: #9A96B6;
         padding: 5%;
+    }
 
-        a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+    #topBar a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     #messageBox {
@@ -395,43 +395,43 @@ footer ul li a:hover {
         background-color: #9A96B6;
         border-top: 1em solid #9A96B6;
         border-bottom: 1.5em solid #9A96B6;
+    }
 
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    
+        border-radius: 10px;
+    }
 
-            border-radius: 10px;
-        }
+    nav li {
+        display: inline-flex;
+    }
+    
+    nav li a {
+        display: block;
+        color: #521E82;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        border-radius: 10px;
+        background-color: #85C0C7;
+    
+        transition-duration: 0.4s;
+    }
 
-        li {
-            display: inline-flex;
-        }
+    nav li a:hover:not(.active) {
+        background-color: #33b1be;
+        color: #521E82;
+    }
 
-        li a {
-            display: block;
-            color: #521E82;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            border-radius: 10px;
-            background-color: #85C0C7;
-
-            transition-duration: 0.4s;
-        }
-
-        li a:hover:not(.active) {
-            background-color: #33b1be;
-            color: #521E82;
-        }
-
-        .active {
-            background-color: #81CD7E;
-            color: #521E82;
-
-            cursor:not-allowed;
-        }
+    nav .active {
+        background-color: #81CD7E;
+        color: #521E82;
+    
+        cursor: not-allowed;
     }
 
     main {
@@ -570,11 +570,11 @@ footer ul li a:hover {
         display: grid;
         grid-template-columns: auto auto;
         grid-gap: 100px;
+    }
 
-        img {
-            border-radius: 100px;
-            padding: 5%;
-        }
+    #grid-image-container img {
+        border-radius: 100px;
+        padding: 5%;
     }
 
     #messageBox {
