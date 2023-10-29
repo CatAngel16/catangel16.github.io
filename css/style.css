@@ -9,10 +9,6 @@
     padding: 0;
 }
 
-:root {
-    --text-border: 25px;
-}
-
 /* fonts start*/
 
 nav {
@@ -133,69 +129,74 @@ footer ul li a:hover {
 /* articles */
 .article1 {
     grid-area: article1;
-    padding-top: var(--text-border) solid transparent;
+    padding-top: 25px;
 }
 
 .article2 {
     grid-area: article2;
-    padding-top: var(--text-border) solid transparent;
+    padding-top: 25px;
 }
 
 .article3 {
     grid-area: article3;
-    padding-top: var(--text-border) solid transparent;
+    padding-top: 25px;
 }
 
 .article4 {
     grid-area: article4;
-    padding-top: var(--text-border) solid transparent;
+    padding-top: 25px;
 }
 
 .article5 {
     grid-area: article5;
-    padding-top: var(--text-border) solid transparent;
+    padding-top: 25px;
 }
 
 /* subarticles */
 .subarticle1 {
     grid-area: subarticle1;
-    padding-top: var(--text-border) solid transparent;
+    padding-top: 25px;
 }
 
 .subarticle2 {
     grid-area: subarticle2;
-    padding-top: var(--text-border) solid transparent;
+    padding-top: 25px;
 }
 
 .subarticle3 {
     grid-area: subarticle3;
-    padding-top: var(--text-border) solid transparent;
+    padding-top: 25px;
 }
 
 /* unordered lists */
 .unorderedList1 {
     grid-area: unorderedList1;
-    padding-top: var(--text-border) solid transparent;
+    padding-top: 25px;
+    padding-left: 25px;
 }
 
 .unorderedList2 {
     grid-area: unorderedList2;
-    padding-top: var(--text-border) solid transparent;
+    padding-top: 25px;
+    padding-left: 25px;
 }
 
 .unorderedList3 {
     grid-area: unorderedList3;
-    padding-top: var(--text-border) solid transparent;
+    padding-top: 25px;
+    padding-left: 25px;
 }
 
 .unorderedList4 {
     grid-area: unorderedList4;
-    padding-top: var(--text-border) solid transparent;
+    padding-top: 25px;
+    padding-left: 25px;
 }
 
 .unorderedList5 {
     grid-area: unorderedList5;
-    padding-top: var(--text-border) solid transparent;
+    padding-top: 25px;
+    padding-left: 25px;
 }
 
 /* images */
@@ -224,6 +225,10 @@ footer ul li a:hover {
 /* forms */
 #form {
     grid-area: form;
+}
+
+#form-all {
+    grid-area: form-all;
 }
 
 #name {
@@ -291,6 +296,24 @@ footer ul li a:hover {
         margin: auto;
 
         font-size: 15px;
+    }
+
+    footer {
+        clear: both;
+        position: relative;
+
+        display: flex;
+
+        background-color: #9A96B6;
+        color: #000;
+
+        border-top: 1.5em solid #9A96B6;
+        border-bottom: 1.5em solid #9A96B6;
+    }
+
+    footer ul {
+        float: right;
+        padding-right: 20px;
     }
 
     /* hamburger menu start */
@@ -391,7 +414,7 @@ footer ul li a:hover {
 
     #messageBox {
         height: 177px;
-        width: 240px;
+        width: 220px;
 
         padding: 10px;
     }
@@ -463,7 +486,7 @@ footer ul li a:hover {
     width: 65%;
     margin: auto;
 
-    border-top: 2em;
+    border-width: 2em;
     border-color: transparent;
     border-style: solid;
 
@@ -474,8 +497,8 @@ footer ul li a:hover {
     letter-spacing: 0.5px;
     } 
 
-    header {
-        padding-top: 40px;
+    article header h2 {
+        padding-bottom: 10px;
     }
 
     img {
@@ -503,9 +526,11 @@ footer ul li a:hover {
         display: grid;
         grid-template-columns: auto auto;
         grid-template-areas: 
-        "title1 title1"
         "article1 article1"
-        "title2 title2"
+        "unorderedList1 unorderedList1"
+        "seperateText1 seperateText1"
+        "unorderedList2 unorderedList2"
+        "title1 title1"
         "subarticle1 img1"
         "img2 subarticle2"
         "subarticle3 img3"
@@ -528,21 +553,32 @@ footer ul li a:hover {
         ;
     }
 
-    #grid-container-technieken {
+    #technieken {
+        grid-area: technieken;
+
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 50% 50%;
         grid-template-areas:
         "title1 title1"
         "article1 img1"
         "article2 img1"
         "article3 img2"
-        "article4 img2"
+        "article4 img3"
         "article5 img3"
+        ;
+    }
+
+    #grid-container-technieken {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-areas: 
+        "technieken technieken"
         ;
     }
 
     #grid-container-cameramodes {
         display: grid;
+        grid-gap: 5px;
         grid-template-columns: auto auto;
         grid-template-areas:
         "title1 title1"
@@ -573,13 +609,21 @@ footer ul li a:hover {
         ;
     }
 
+    #form-all {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas: 
+        "form"
+        ;
+    }
+
     #grid-container-contact {
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-areas:
         "title1 title1"
         "article1 article1"
-        "form form"
+        "form-all form-all"
         ;
     }
 

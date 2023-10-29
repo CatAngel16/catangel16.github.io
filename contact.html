@@ -9,7 +9,7 @@
         <link rel="icon" type="image/x-icon" href="img/favicon.ico">
         <link rel="stylesheet" type="text/css" href="css/style.css">
 
-        <meta name="description" content="">
+        <meta name="description" content="De contact pagina van Photo Factory, hier kunt u contact met mij opnemen">
         <meta name="keywords" content="Fotografie, Camera, Verbeteren, Instellingen, Technieken">
         <meta name="author" content="Jeremy Feenstra">
 
@@ -119,76 +119,79 @@
                 verzenden zal ik zo snel mogelijk reageren op uw bericht.
             </article>
             
-            <form action="verzonden.html" method="post" id="form">
-                <section id="radioButtons">
-                    <label>
-                        Aanhef: *
-                    </label>
+            <form action="verzonden.html" method="post" id="form-all">
+                <legend id="form">
+                    <section id="radioButtons">
+                        <label>
+                            Aanhef: *
+                        </label>
 
-                    <p>
-                        <input type="radio" name="aanhef" value="Heer" id="Heer" checked>
-                        <label for="Heer">De heer</label>
+                        <p>
+                            <input type="radio" name="aanhef" value="Heer" id="Heer" checked>
+                            <label for="Heer">De heer</label>
 
-                        <input type="radio" name="aanhef" value="Mevrouw" id="Mevrouw">
-                        <label for="Mevrouw">Mevrouw</label>
+                            <input type="radio" name="aanhef" value="Mevrouw" id="Mevrouw">
+                            <label for="Mevrouw">Mevrouw</label>
 
-                        <input type="radio" name="aanhef" value="Anders" id="Anders">
-                        <label for="Anders">Anders, namelijk:</label>
-                        <input type="text" class="textBox">
-                    </p>  
-                </section>
+                            <input type="radio" name="aanhef" value="Anders" id="Anders">
+                            <label for="Anders">Anders, namelijk:</label>
+                            <input type="text" class="textBox">
+                        </p>  
+                    </section>
 
-                <section id="name">
-                    <label>
-                        Naam: *
-                    </label>
+                    <section id="name">
+                        <label>
+                            Naam: *
+                        </label>
 
-                    <p>
-                        <input type="text" class="textBox" required>
-                    </p>
-                </section>
+                        <p>
+                            <input type="text" class="textBox" required>
+                        </p>
+                    </section>
 
-                <section id="email">
-                    <label>
-                        E-mail: *
-                    </label>
+                    <section id="email">
+                        <label>
+                            E-mail: *
+                        </label>
 
-                    <p>
-                        <input type="email" class="textBox" required>
-                    </p>
-                </section>
+                        <p>
+                            <input type="email" class="textBox" required>
+                        </p>
+                    </section>
 
-                <section id="subject">
-                    <label>
-                        Onderwerp: *
-                    </label>
+                    <section id="subject">
+                        <label>
+                            Onderwerp: *
+                        </label>
 
-                    <p>
-                        <input type="text" class="textBox" required>
-                    </p>
-                </section>
+                        <p>
+                            <input type="text" class="textBox" required>
+                        </p>
+                    </section>
 
-                <section id="phoneNumber">
-                    <label>
-                        Telefoonnummer:<em id="optional">(optioneel)</em>
-                    </label>
+                    <section id="phoneNumber">
+                        <label>
+                            Telefoonnummer:<em id="optional">(optioneel)</em>
+                        </label>
 
-                    <p>
-                        <input type="tel" class="textBox">
-                    </p>
-                </section>
+                        <p>
+                            <input type="tel" class="textBox">
+                        </p>
+                    </section>
 
-                <section id="message">
-                    <label>
-                        Bericht: *
-                    </label>
+                    <section id="message">
+                        <label>
+                            Bericht: *
+                        </label>
 
-                    <p>
-                        <textarea name="bericht" id="messageBox" class="textBox" required></textarea>
-                    </p>
-                </section>
+                        <p>
+                            <textarea name="bericht" id="messageBox" class="textBox" required></textarea>
+                        </p>
+                    </section>
 
-                <input type="submit" value="Verzenden" class="sendButton" />
+                    <input type="submit" value="Verzenden" class="sendButton" />
+                </legend>
+                
             </form>
 
             <aside id="cookies">
