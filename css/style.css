@@ -7,6 +7,9 @@
     border: 0;
     margin: 0;
     padding: 0;
+
+    word-spacing: normal;
+    text-indent: 0;
 }
 
 /* fonts start*/
@@ -17,7 +20,7 @@ nav {
 
 body, html {
     color: #521E82;
-    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Be Vietnam Pro', sans-serif; 
 }
 
 /* fonts end */
@@ -78,20 +81,37 @@ footer ul li a:hover {
     text-decoration: underline 4px #85C0C7;
 }
 
+legend {
+    color: #000000;
+    font-size: 15px;
+}
+
 .disclaimer {
     padding: 25px;
     color: #000000;
 }
 
 .textBox {
+    padding-left: 10px;
     border: 2px solid #000000;
     border-radius: 15px;
     height: 48px;
     width: 263px;
 }
 
-.textLinks {
+.textLinks:link {
     color: #d81f1f;
+    transition: 0.2s;
+}
+
+.textLinks:visited {
+    color: #d81f1f;
+    transition: 0.2s;
+}
+
+.textLinks:hover {
+    color: #000000;
+    text-decoration: underline #85C0C7 3px;
 }
 
 .sluitertijd {
@@ -149,6 +169,11 @@ footer ul li a:hover {
 
 .article5 {
     grid-area: article5;
+    padding-top: 25px;
+}
+
+.article6 {
+    grid-area: article6;
     padding-top: 25px;
 }
 
@@ -219,7 +244,7 @@ footer ul li a:hover {
 /* seperate text */
 .seperateText1 {
     grid-area: seperateText1;
-    border: var(--text-border) solid transparent;
+    padding-top: 20px;
 }
 
 /* forms */
@@ -288,6 +313,10 @@ footer ul li a:hover {
     bottom: 0;
 }
 
+#iso {
+    text-transform: uppercase;
+}
+
 
 /* mobile */
 @media screen and (max-width: 767px) {
@@ -296,6 +325,15 @@ footer ul li a:hover {
         margin: auto;
 
         font-size: 15px;
+    }
+
+    header {
+        padding-top: 10px;
+    }
+
+    img {
+        border-radius: 25px;
+        padding-top: 10px;
     }
 
     footer {
@@ -383,7 +421,7 @@ footer ul li a:hover {
     /* hamburger menu end */
 
     .textBox {
-        width: 240px;
+        width: 99%;
     }
 
     .logo {
@@ -414,7 +452,7 @@ footer ul li a:hover {
 
     #messageBox {
         height: 177px;
-        width: 220px;
+        width: 95%;
 
         padding: 10px;
     }
@@ -431,6 +469,53 @@ footer ul li a:hover {
     
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
+    }
+
+    #contents ul {
+        list-style: none;
+    }
+
+    #contents ul li {
+        padding-top: 5px;
+    }
+
+    /* mobile specific grid areas */
+
+    #article2-1 {
+        grid-area: article2-1;
+        padding-top: 17px;
+    }
+
+    #article2-2 {
+        grid-area: article2-2;
+    }
+
+    /* grid layouts for some pages */
+
+    #technieken {
+        grid-area: technieken;
+
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
+        "title1 title1"
+        "article1 article1"
+        "article2-1 img1"
+        "article2-2 article2-2"
+        "article3 article3"
+        "img2 img2"
+        "article4 article4"
+        "article5 img3"
+        "article6 article6"
+        ;
+    }
+
+    #grid-container-technieken {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-areas: 
+        "technieken technieken"
+        ;
     }
 }
 
@@ -501,6 +586,10 @@ footer ul li a:hover {
         padding-bottom: 10px;
     }
 
+    header {
+        padding-top: 10px;
+    }
+
     img {
         border-radius: 25px;
     }
@@ -520,11 +609,11 @@ footer ul li a:hover {
         display: none;
     }
 
-    /* grid area per page start*/
+    /* grid layouts per page start*/
 
     #grid-container-cameras {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 50% 50%;
         grid-template-areas: 
         "article1 article1"
         "unorderedList1 unorderedList1"
@@ -563,9 +652,15 @@ footer ul li a:hover {
         "article1 img1"
         "article2 img1"
         "article3 img2"
-        "article4 img3"
+        "article4 article4"
         "article5 img3"
+        "article6 img3"
         ;
+    }
+
+    #technieken img {
+        height: auto;
+        width: 60%;
     }
 
     #grid-container-technieken {
@@ -579,7 +674,7 @@ footer ul li a:hover {
     #grid-container-cameramodes {
         display: grid;
         grid-gap: 5px;
-        grid-template-columns: auto auto;
+        grid-template-columns: 50% 50%;
         grid-template-areas:
         "title1 title1"
         "article1 article1"
@@ -627,7 +722,7 @@ footer ul li a:hover {
         ;
     }
 
-    /* grid area per page end */
+    /* grid layouts per page end */
 
     /* home page side by side images */
     #grid-image-container {
