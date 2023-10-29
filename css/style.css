@@ -82,6 +82,11 @@ footer ul li a:hover {
     text-decoration: underline 4px #85C0C7;
 }
 
+.disclaimer {
+    padding: 25px;
+    color: #000000;
+}
+
 .textBox {
     border: 2px solid #000000;
     border-radius: 15px;
@@ -128,69 +133,69 @@ footer ul li a:hover {
 /* articles */
 .article1 {
     grid-area: article1;
-    border: var(--text-border) solid transparent;
+    padding-top: var(--text-border) solid transparent;
 }
 
 .article2 {
     grid-area: article2;
-    border: var(--text-border) solid transparent;
+    padding-top: var(--text-border) solid transparent;
 }
 
 .article3 {
     grid-area: article3;
-    border: var(--text-border) solid transparent;
+    padding-top: var(--text-border) solid transparent;
 }
 
 .article4 {
     grid-area: article4;
-    border: var(--text-border) solid transparent;
+    padding-top: var(--text-border) solid transparent;
 }
 
 .article5 {
     grid-area: article5;
-    border: var(--text-border) solid transparent;
+    padding-top: var(--text-border) solid transparent;
 }
 
 /* subarticles */
 .subarticle1 {
     grid-area: subarticle1;
-    border: var(--text-border) solid transparent;
+    padding-top: var(--text-border) solid transparent;
 }
 
 .subarticle2 {
     grid-area: subarticle2;
-    border: var(--text-border) solid transparent;
+    padding-top: var(--text-border) solid transparent;
 }
 
 .subarticle3 {
     grid-area: subarticle3;
-    border: var(--text-border) solid transparent;
+    padding-top: var(--text-border) solid transparent;
 }
 
 /* unordered lists */
 .unorderedList1 {
     grid-area: unorderedList1;
-    border: var(--text-border) solid transparent;
+    padding-top: var(--text-border) solid transparent;
 }
 
 .unorderedList2 {
     grid-area: unorderedList2;
-    border: var(--text-border) solid transparent;
+    padding-top: var(--text-border) solid transparent;
 }
 
 .unorderedList3 {
     grid-area: unorderedList3;
-    border: var(--text-border) solid transparent;
+    padding-top: var(--text-border) solid transparent;
 }
 
 .unorderedList4 {
     grid-area: unorderedList4;
-    border: var(--text-border) solid transparent;
+    padding-top: var(--text-border) solid transparent;
 }
 
 .unorderedList5 {
     grid-area: unorderedList5;
-    border: var(--text-border) solid transparent;
+    padding-top: var(--text-border) solid transparent;
 }
 
 /* images */
@@ -372,6 +377,12 @@ footer ul li a:hover {
         padding: 5%;
     }
 
+    #topBar p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     #topBar a {
         display: flex;
         justify-content: center;
@@ -383,6 +394,20 @@ footer ul li a:hover {
         width: 240px;
 
         padding: 10px;
+    }
+
+    #cookies {
+        writing-mode: sideways-rl;
+
+        z-index: 9999;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        background: #81CD7E;
+        padding: 5px;
+    
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
     }
 }
 
@@ -466,11 +491,6 @@ footer ul li a:hover {
         display: grid;
         grid-template-columns: auto auto;
         grid-gap: 10px;
-    }
-
-    .article5 {
-        padding: 25px;
-        color: #000000;
     }
 
     .mobile {
@@ -585,5 +605,17 @@ footer ul li a:hover {
 
     #optional {
     font-size: 10px;
+    }
+
+    #cookies {
+        z-index: 9999;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        background: #81CD7E;
+        padding: 5px;
+
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
     }
 }
